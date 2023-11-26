@@ -38,5 +38,12 @@ namespace ChoresDesktopApp
             this.Hide();
             form.ShowDialog();
         }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            MainForm form = new MainForm();
+            this.Hide();
+            form.ShowDialog();
+        }
     }
 }
