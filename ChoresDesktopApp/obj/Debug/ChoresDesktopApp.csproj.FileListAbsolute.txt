@@ -1,0 +1,11 @@
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\bin\Debug\ChoresDesktopApp.exe.config
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\bin\Debug\ChoresDesktopApp.exe
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\bin\Debug\ChoresDesktopApp.pdb
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.csproj.AssemblyReference.cache
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Properties.Resources.resources
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Registration.resources
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.csproj.GenerateResource.cache
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.csproj.CoreCompileInputs.cache
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.exe
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.pdb
+E:\Semester5\SE Lab\Project\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Login.resources
