@@ -73,7 +73,6 @@ E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\bin\Debug\Infragist
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.csproj.AssemblyReference.cache
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Login.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.MainForm.resources
-E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.MainForm2.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Properties.Resources.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Registration.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.csproj.GenerateResource.cache
@@ -82,3 +81,5 @@ E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDes
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.csproj.CopyComplete
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.exe
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.pdb
+E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.UI.SupplierMode.resources
+E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.UI.ReceiverMode.resources

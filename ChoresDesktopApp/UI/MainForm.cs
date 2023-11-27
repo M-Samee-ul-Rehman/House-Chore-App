@@ -33,7 +33,7 @@ namespace ChoresDesktopApp
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void homebtn_Click(object sender, EventArgs e)

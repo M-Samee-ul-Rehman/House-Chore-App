@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChoresDesktopApp.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -72,7 +73,7 @@ namespace ChoresDesktopApp
                         if (count > 0)
                         {
                             MessageBox.Show("Login successful!");
-                            MainForm2 form = new MainForm2();
+                            SupplierMode form = new SupplierMode();
                             this.Hide();
                             form.ShowDialog();
                         }

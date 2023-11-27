@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.LogInbtn = new Infragistics.Win.Misc.UltraButton();
             this.registerbtn = new Infragistics.Win.Misc.UltraButton();
-            this.ultraPanel1 = new Infragistics.Win.Misc.UltraPanel();
-            this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
+            this.LogInbtn = new Infragistics.Win.Misc.UltraButton();
             this.homebtn = new Infragistics.Win.Misc.UltraButton();
             this.aboutbtn = new Infragistics.Win.Misc.UltraButton();
             this.welcomelbl = new Infragistics.Win.Misc.UltraLabel();
+            this.ultraPanel1 = new Infragistics.Win.Misc.UltraPanel();
+            this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -56,7 +56,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.33596F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.710464F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.238395F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tableLayoutPanel1.Controls.Add(this.registerbtn, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.LogInbtn, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.homebtn, 1, 1);
@@ -72,25 +72,57 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1292, 143);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // registerbtn
+            // 
+            this.registerbtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.registerbtn.Location = new System.Drawing.Point(1178, 27);
+            this.registerbtn.Name = "registerbtn";
+            this.registerbtn.Size = new System.Drawing.Size(85, 40);
+            this.registerbtn.TabIndex = 1;
+            this.registerbtn.Text = "Register";
+            this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);
+            // 
             // LogInbtn
             // 
             this.LogInbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogInbtn.Location = new System.Drawing.Point(1084, 27);
+            this.LogInbtn.Location = new System.Drawing.Point(1081, 27);
             this.LogInbtn.Name = "LogInbtn";
-            this.LogInbtn.Size = new System.Drawing.Size(92, 40);
+            this.LogInbtn.Size = new System.Drawing.Size(91, 40);
             this.LogInbtn.TabIndex = 0;
             this.LogInbtn.Text = "LogIn";
             this.LogInbtn.Click += new System.EventHandler(this.LogInbtn_Click);
             // 
-            // registerbtn
+            // homebtn
             // 
-            this.registerbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.registerbtn.Location = new System.Drawing.Point(1182, 27);
-            this.registerbtn.Name = "registerbtn";
-            this.registerbtn.Size = new System.Drawing.Size(86, 40);
-            this.registerbtn.TabIndex = 1;
-            this.registerbtn.Text = "Register";
-            this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);
+            this.homebtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homebtn.Location = new System.Drawing.Point(42, 27);
+            this.homebtn.Name = "homebtn";
+            this.homebtn.Size = new System.Drawing.Size(112, 40);
+            this.homebtn.TabIndex = 2;
+            this.homebtn.Text = "Home";
+            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
+            // 
+            // aboutbtn
+            // 
+            this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aboutbtn.Location = new System.Drawing.Point(160, 27);
+            this.aboutbtn.Name = "aboutbtn";
+            this.aboutbtn.Size = new System.Drawing.Size(110, 40);
+            this.aboutbtn.TabIndex = 3;
+            this.aboutbtn.Text = "About";
+            // 
+            // welcomelbl
+            // 
+            appearance1.TextHAlignAsString = "Center";
+            appearance1.TextVAlignAsString = "Middle";
+            this.welcomelbl.Appearance = appearance1;
+            this.welcomelbl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.welcomelbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.welcomelbl.Location = new System.Drawing.Point(276, 27);
+            this.welcomelbl.Name = "welcomelbl";
+            this.welcomelbl.Size = new System.Drawing.Size(799, 40);
+            this.welcomelbl.TabIndex = 4;
+            this.welcomelbl.Text = "Welcome To Your Dream Chores";
             // 
             // ultraPanel1
             // 
@@ -114,38 +146,6 @@
             this.ultraPictureBox1.Name = "ultraPictureBox1";
             this.ultraPictureBox1.Size = new System.Drawing.Size(290, 580);
             this.ultraPictureBox1.TabIndex = 0;
-            // 
-            // homebtn
-            // 
-            this.homebtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homebtn.Location = new System.Drawing.Point(43, 27);
-            this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(113, 40);
-            this.homebtn.TabIndex = 2;
-            this.homebtn.Text = "Home";
-            this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
-            // 
-            // aboutbtn
-            // 
-            this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutbtn.Location = new System.Drawing.Point(162, 27);
-            this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Size = new System.Drawing.Size(111, 40);
-            this.aboutbtn.TabIndex = 3;
-            this.aboutbtn.Text = "About";
-            // 
-            // welcomelbl
-            // 
-            appearance4.TextHAlignAsString = "Center";
-            appearance4.TextVAlignAsString = "Middle";
-            this.welcomelbl.Appearance = appearance4;
-            this.welcomelbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.welcomelbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.welcomelbl.Location = new System.Drawing.Point(279, 27);
-            this.welcomelbl.Name = "welcomelbl";
-            this.welcomelbl.Size = new System.Drawing.Size(799, 40);
-            this.welcomelbl.TabIndex = 4;
-            this.welcomelbl.Text = "Welcome";
             // 
             // tableLayoutPanel2
             // 
