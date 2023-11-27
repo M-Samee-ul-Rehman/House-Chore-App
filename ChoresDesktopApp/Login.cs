@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,6 +45,43 @@ namespace ChoresDesktopApp
             MainForm form = new MainForm();
             this.Hide();
             form.ShowDialog();
+        }
+
+        private void loginbtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(@"Data Source=YASIRSELITEBOOK;Initial Catalog=ChoresDesktop;Integrated Security=True"))
+                {
+                    connection.Open();
+
+                    // Check if the provided email and CNIC exist in the Login table
+                    string loginCheckQuery = "SELECT COUNT(*) FROM Login WHERE Email = @Email AND CNIC = @CNIC;";
+
+                    using (SqlCommand loginCheckCommand = new SqlCommand(loginCheckQuery, connection))
+                    {
+                        loginCheckCommand.Parameters.AddWithValue("@Email", emailtxt.Text);
+                        loginCheckCommand.Parameters.AddWithValue("@CNIC", cnictxt.Text);
+
+                        int count = Convert.ToInt32(loginCheckCommand.ExecuteScalar());
+
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Login successful!");
+                            // Additional logic for successful login
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid email or CNIC. Please try again.");
+                            // Additional logic for failed login
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

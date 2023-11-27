@@ -55,6 +55,7 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

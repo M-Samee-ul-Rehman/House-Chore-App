@@ -43,11 +43,11 @@
             this.contacttxt = new System.Windows.Forms.TextBox();
             this.addresstxt = new System.Windows.Forms.TextBox();
             this.cnictxt = new System.Windows.Forms.TextBox();
+            this.backbtn = new System.Windows.Forms.Button();
             this.resgisterbtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.backbtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -268,6 +268,20 @@
             this.cnictxt.TabIndex = 11;
             this.cnictxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // backbtn
+            // 
+            this.backbtn.BackColor = System.Drawing.Color.Black;
+            this.backbtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.backbtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn.ForeColor = System.Drawing.Color.White;
+            this.backbtn.Location = new System.Drawing.Point(24, 224);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(152, 60);
+            this.backbtn.TabIndex = 13;
+            this.backbtn.Text = "Back";
+            this.backbtn.UseVisualStyleBackColor = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // resgisterbtn
             // 
             this.resgisterbtn.BackColor = System.Drawing.Color.Black;
@@ -280,6 +294,7 @@
             this.resgisterbtn.TabIndex = 12;
             this.resgisterbtn.Text = "Resgister";
             this.resgisterbtn.UseVisualStyleBackColor = false;
+            this.resgisterbtn.Click += new System.EventHandler(this.resgisterbtn_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -289,7 +304,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.402032F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 92.59797F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 274F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 276F));
             this.tableLayoutPanel3.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.linkLabel1, 2, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(376, 469);
@@ -308,7 +323,7 @@
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(27, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 28);
+            this.label1.Size = new System.Drawing.Size(301, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Already have an account?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -319,7 +334,7 @@
             this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.linkLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Location = new System.Drawing.Point(336, 11);
+            this.linkLabel1.Location = new System.Drawing.Point(334, 11);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(96, 28);
             this.linkLabel1.TabIndex = 1;
@@ -327,20 +342,6 @@
             this.linkLabel1.Text = "SignIn";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // backbtn
-            // 
-            this.backbtn.BackColor = System.Drawing.Color.Black;
-            this.backbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.backbtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backbtn.ForeColor = System.Drawing.Color.White;
-            this.backbtn.Location = new System.Drawing.Point(24, 224);
-            this.backbtn.Name = "backbtn";
-            this.backbtn.Size = new System.Drawing.Size(152, 60);
-            this.backbtn.TabIndex = 13;
-            this.backbtn.Text = "Back";
-            this.backbtn.UseVisualStyleBackColor = false;
-            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
             // 
             // Registration
             // 
