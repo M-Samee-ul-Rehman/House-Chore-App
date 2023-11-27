@@ -51,6 +51,10 @@ namespace ChoresDesktopApp
         {
             try
             {
+                if(cnictxt.Text == "" || emailtxt.Text == "")
+                {
+                    throw new Exception("Please fill all fields");
+                }
                 using (SqlConnection connection = new SqlConnection(@"Data Source=YASIRSELITEBOOK;Initial Catalog=ChoresDesktop;Integrated Security=True"))
                 {
                     connection.Open();
@@ -68,7 +72,9 @@ namespace ChoresDesktopApp
                         if (count > 0)
                         {
                             MessageBox.Show("Login successful!");
-                            // Additional logic for successful login
+                            MainForm2 form = new MainForm2();
+                            this.Hide();
+                            form.ShowDialog();
                         }
                         else
                         {
@@ -81,6 +87,8 @@ namespace ChoresDesktopApp
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                emailtxt.Text = "";
+                cnictxt.Text = "";
             }
         }
     }

@@ -52,6 +52,29 @@ namespace ChoresDesktopApp
         {
             try
             {
+                string email = emailtxt.Text;
+                string cnic = cnictxt.Text;
+                string contact = contacttxt.Text;
+
+                if (firstNametxt.Text == "" || lastNametxt.Text == "" || emailtxt.Text == "" || contacttxt.Text == "" || addresstxt.Text == "" || cnictxt.Text == "")
+                {
+                    throw new Exception("Please fill all the fields");
+                }
+
+                if(!email.Contains("@"))
+                {
+                    throw new Exception("Invalid Email!");
+                }
+
+                if(cnic.Length != 13 || !(long.TryParse(cnic, out _)))
+                {
+                    throw new Exception("Invalid CNIC!");
+                }
+
+                if (contact.Length != 13 || !(long.TryParse(contact, out _)))
+                {
+                    throw new Exception("Invalid Phone Number!");
+                }
                 using (SqlConnection connection = new SqlConnection(@"Data Source=YASIRSELITEBOOK;Initial Catalog=ChoresDesktop;Integrated Security=True"))
                 {
                     connection.Open();
@@ -87,11 +110,23 @@ namespace ChoresDesktopApp
                     }
 
                     MessageBox.Show("Data inserted successfully!");
+                    firstNametxt.Text = "";
+                    lastNametxt.Text = "";
+                    emailtxt.Text = "";
+                    contacttxt.Text = "";
+                    addresstxt.Text = "";
+                    cnictxt.Text = "";
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+                firstNametxt.Text = "";
+                lastNametxt.Text = "";
+                emailtxt.Text = "";
+                contacttxt.Text = "";
+                addresstxt.Text = "";
+                cnictxt.Text = "";
             }
         }
     }
