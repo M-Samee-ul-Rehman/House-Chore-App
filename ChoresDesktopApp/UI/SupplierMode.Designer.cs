@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.supplierbtn = new Infragistics.Win.Misc.UltraButton();
             this.aboutbtn = new Infragistics.Win.Misc.UltraButton();
@@ -41,11 +41,12 @@
             this.successbtn = new Infragistics.Win.Misc.UltraButton();
             this.logOutbtn = new Infragistics.Win.Misc.UltraButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-         //   this.profileManagement1 = new ChoresDesktopApp.profileManagement();
-         //   this.profileManagement2 = new ChoresDesktopApp.profileManagement();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.profile_cs1 = new ChoresDesktopApp.Controls.profile_cs();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -57,7 +58,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.01158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.710464F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.238395F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
             this.tableLayoutPanel1.Controls.Add(this.supplierbtn, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.aboutbtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.welcomelbl, 3, 1);
@@ -75,9 +76,9 @@
             // supplierbtn
             // 
             this.supplierbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.supplierbtn.Location = new System.Drawing.Point(43, 27);
+            this.supplierbtn.Location = new System.Drawing.Point(42, 27);
             this.supplierbtn.Name = "supplierbtn";
-            this.supplierbtn.Size = new System.Drawing.Size(112, 40);
+            this.supplierbtn.Size = new System.Drawing.Size(110, 40);
             this.supplierbtn.TabIndex = 2;
             this.supplierbtn.Text = "Supplier Mode";
             this.supplierbtn.Click += new System.EventHandler(this.homebtn_Click);
@@ -85,23 +86,23 @@
             // aboutbtn
             // 
             this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutbtn.Location = new System.Drawing.Point(161, 27);
+            this.aboutbtn.Location = new System.Drawing.Point(158, 27);
             this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Size = new System.Drawing.Size(118, 40);
+            this.aboutbtn.Size = new System.Drawing.Size(116, 40);
             this.aboutbtn.TabIndex = 3;
             this.aboutbtn.Text = "Receiver Mode";
             this.aboutbtn.Click += new System.EventHandler(this.aboutbtn_Click);
             // 
             // welcomelbl
             // 
-            appearance1.TextHAlignAsString = "Center";
-            appearance1.TextVAlignAsString = "Middle";
-            this.welcomelbl.Appearance = appearance1;
+            appearance4.TextHAlignAsString = "Center";
+            appearance4.TextVAlignAsString = "Middle";
+            this.welcomelbl.Appearance = appearance4;
             this.welcomelbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.welcomelbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.welcomelbl.Location = new System.Drawing.Point(285, 27);
+            this.welcomelbl.Location = new System.Drawing.Point(280, 27);
             this.welcomelbl.Name = "welcomelbl";
-            this.welcomelbl.Size = new System.Drawing.Size(801, 40);
+            this.welcomelbl.Size = new System.Drawing.Size(788, 40);
             this.welcomelbl.TabIndex = 4;
             this.welcomelbl.Text = "Welcome To Your Dream Chores";
             // 
@@ -132,6 +133,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.22623F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(213, 563);
             this.tableLayoutPanel2.TabIndex = 2;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // profilebtn
             // 
@@ -197,7 +199,7 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-           // this.tableLayoutPanel3.Controls.Add(this.profileManagement2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(210, 143);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -205,19 +207,27 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1109, 563);
             this.tableLayoutPanel3.TabIndex = 4;
             // 
-            // profileManagement1
+            // tableLayoutPanel4
             // 
-           // this.profileManagement1.Location = new System.Drawing.Point(219, 143);
-           // this.profileManagement1.Name = "profileManagement1";
-           // this.profileManagement1.Size = new System.Drawing.Size(1100, 563);
-           // this.profileManagement1.TabIndex = 3;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.profile_cs1, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1103, 557);
+            this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // profileManagement2
+            // profile_cs1
             // 
-           // this.profileManagement2.Location = new System.Drawing.Point(3, 3);
-          //  this.profileManagement2.Name = "profileManagement2";
-           // this.profileManagement2.Size = new System.Drawing.Size(1091, 486);
-           // this.profileManagement2.TabIndex = 0;
+            this.profile_cs1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.profile_cs1.Location = new System.Drawing.Point(3, 3);
+            this.profile_cs1.Name = "profile_cs1";
+            this.profile_cs1.Size = new System.Drawing.Size(1097, 551);
+            this.profile_cs1.TabIndex = 0;
+            this.profile_cs1.Visible = false;
             // 
             // SupplierMode
             // 
@@ -226,7 +236,6 @@
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1319, 706);
             this.Controls.Add(this.tableLayoutPanel3);
-          //  this.Controls.Add(this.profileManagement1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "SupplierMode";
@@ -235,6 +244,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -254,6 +264,8 @@
         private Infragistics.Win.Misc.UltraButton logOutbtn;
       //  private profileManagement profileManagement1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-      //  private profileManagement profileManagement2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private Controls.profile_cs profile_cs1;
+        //  private profileManagement profileManagement2;
     }
 }

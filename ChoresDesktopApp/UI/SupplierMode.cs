@@ -43,27 +43,32 @@ namespace ChoresDesktopApp.UI
 
         private void profilebtn_Click(object sender, EventArgs e)
         {
-            
+           profile_cs1.Visible = true;
         }
 
         private void choresbtn_Click(object sender, EventArgs e)
         {
-            
+          //  profile_cs1.Visible = false;
         }
 
         private void bookingbtn_Click(object sender, EventArgs e)
         {
-           
+          //  profile_cs1.Visible = false;
         }
 
         private void communicatebtn_Click(object sender, EventArgs e)
         {
-            
+           // profile_cs1.Visible = false;
         }
 
         private void successbtn_Click(object sender, EventArgs e)
         {
-            
+           // profile_cs1.Visible = false;
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
