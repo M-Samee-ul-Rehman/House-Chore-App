@@ -33,5 +33,37 @@ namespace ChoresDesktopApp.UI
         {
             supplierbtn.Enabled = false;
         }
+
+        private void logOutbtn_Click(object sender, EventArgs e)
+        {
+            MainForm form = new MainForm();
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void profilebtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void choresbtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bookingbtn_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void communicatebtn_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void successbtn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

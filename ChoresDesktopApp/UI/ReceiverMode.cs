@@ -33,5 +33,12 @@ namespace ChoresDesktopApp.UI
         {
             receiverbtn.Enabled = false;
         }
+
+        private void logOutbtn_Click(object sender, EventArgs e)
+        {
+            MainForm form = new MainForm();
+            this.Hide();
+            form.ShowDialog();
+        }
     }
 }
