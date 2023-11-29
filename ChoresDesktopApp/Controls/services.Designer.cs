@@ -38,6 +38,7 @@
             this.addbtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.showbtn = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -155,10 +156,13 @@
             this.addbtn.TabIndex = 6;
             this.addbtn.Text = "Add";
             this.addbtn.UseVisualStyleBackColor = false;
+            this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Delete});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(418, 243);
             this.dataGridView1.Name = "dataGridView1";
@@ -166,6 +170,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(582, 352);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // showbtn
             // 
@@ -179,6 +184,16 @@
             this.showbtn.TabIndex = 8;
             this.showbtn.Text = "Show";
             this.showbtn.UseVisualStyleBackColor = false;
+            this.showbtn.Click += new System.EventHandler(this.showbtn_Click);
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.MinimumWidth = 8;
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 150;
             // 
             // services
             // 
@@ -206,5 +221,6 @@
         private System.Windows.Forms.Button addbtn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button showbtn;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }
