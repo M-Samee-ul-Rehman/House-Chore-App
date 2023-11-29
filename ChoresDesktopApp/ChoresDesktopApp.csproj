@@ -61,6 +61,7 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backend\UserLogin.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="Controls\Booking.cs">
       <SubType>UserControl</SubType>
@@ -177,8 +178,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Backend\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

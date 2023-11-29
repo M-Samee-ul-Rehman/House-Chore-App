@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ChoresDesktopApp.Backend;
 
 namespace ChoresDesktopApp
 {
@@ -72,7 +73,14 @@ namespace ChoresDesktopApp
 
                         if (count > 0)
                         {
+                            
+                            
+
                             MessageBox.Show("Login successful!");
+
+                            UserLogin user = new UserLogin(emailtxt.Text, cnictxt.Text);
+                            UserLogin.userLogins.Add(user);
+
                             SupplierMode form = new SupplierMode();
                             this.Hide();
                             form.ShowDialog();

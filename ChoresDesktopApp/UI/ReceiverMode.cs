@@ -13,6 +13,7 @@ namespace ChoresDesktopApp.UI
 {
     public partial class ReceiverMode : Form
     {
+        public string email;
         public ReceiverMode()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace ChoresDesktopApp.UI
         private void ReceiverMode_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            BackColor = Color.Blue;
         }
 
         private void receiverbtn_Click(object sender, EventArgs e)
@@ -52,7 +54,7 @@ namespace ChoresDesktopApp.UI
 
         private void profilebtn_Click(object sender, EventArgs e)
         {
-            profile_cs controls = new profile_cs();
+            profile_cs controls = new profile_cs(email);
             addUserControl(controls);
         }
 

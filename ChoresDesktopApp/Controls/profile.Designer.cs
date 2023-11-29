@@ -43,6 +43,7 @@
             this.addresstxt = new System.Windows.Forms.TextBox();
             this.cnictxt = new System.Windows.Forms.TextBox();
             this.editbtn = new System.Windows.Forms.Button();
+            this.showbtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +89,7 @@
             this.tableLayoutPanel2.Controls.Add(this.addresstxt, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.cnictxt, 6, 3);
             this.tableLayoutPanel2.Controls.Add(this.editbtn, 5, 5);
+            this.tableLayoutPanel2.Controls.Add(this.showbtn, 1, 5);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 7;
@@ -187,6 +189,7 @@
             this.firstNametxt.Size = new System.Drawing.Size(330, 46);
             this.firstNametxt.TabIndex = 6;
             this.firstNametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.firstNametxt.TextChanged += new System.EventHandler(this.firstNametxt_TextChanged);
             // 
             // lastNametxt
             // 
@@ -255,6 +258,20 @@
             this.editbtn.TabIndex = 12;
             this.editbtn.Text = "Edit";
             this.editbtn.UseVisualStyleBackColor = false;
+            this.editbtn.Click += new System.EventHandler(this.editbtn_Click);
+            // 
+            // showbtn
+            // 
+            this.showbtn.BackColor = System.Drawing.Color.Black;
+            this.showbtn.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showbtn.ForeColor = System.Drawing.Color.White;
+            this.showbtn.Location = new System.Drawing.Point(27, 478);
+            this.showbtn.Name = "showbtn";
+            this.showbtn.Size = new System.Drawing.Size(180, 136);
+            this.showbtn.TabIndex = 13;
+            this.showbtn.Text = "Show";
+            this.showbtn.UseVisualStyleBackColor = false;
+            this.showbtn.Click += new System.EventHandler(this.showbtn_Click);
             // 
             // profile_cs
             // 
@@ -288,5 +305,6 @@
         private System.Windows.Forms.TextBox addresstxt;
         private System.Windows.Forms.TextBox cnictxt;
         private System.Windows.Forms.Button editbtn;
+        private System.Windows.Forms.Button showbtn;
     }
 }

@@ -15,6 +15,7 @@ namespace ChoresDesktopApp.UI
     public partial class SupplierMode : Form
     {
         private Button lastPressedButton;
+        public string email;
         public SupplierMode()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace ChoresDesktopApp.UI
         private void SupplierMode_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+            BackColor = Color.Blue;
         }
 
         private void aboutbtn_Click(object sender, EventArgs e)
@@ -55,7 +57,7 @@ namespace ChoresDesktopApp.UI
 
         private void profilebtn_Click(object sender, EventArgs e)
         {
-           profile_cs controls = new profile_cs();
+           profile_cs controls = new profile_cs(email);
             addUserControl(controls);
             BackColor = Color.Blue;
             
