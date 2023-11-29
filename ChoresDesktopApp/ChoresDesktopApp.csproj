@@ -68,6 +68,18 @@
     <Compile Include="Controls\profile.Designer.cs">
       <DependentUpon>profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\services.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\services.Designer.cs">
+      <DependentUpon>services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,12 @@
     </Compile>
     <EmbeddedResource Include="Controls\profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\services.resx">
+      <DependentUpon>services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

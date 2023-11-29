@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.homebtn = new Infragistics.Win.Misc.UltraButton();
             this.receiverbtn = new Infragistics.Win.Misc.UltraButton();
@@ -40,6 +40,7 @@
             this.communicatebtn = new Infragistics.Win.Misc.UltraButton();
             this.reviewbtn = new Infragistics.Win.Misc.UltraButton();
             this.logOutbtn = new Infragistics.Win.Misc.UltraButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.01158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.710464F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.238395F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel1.Controls.Add(this.homebtn, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.receiverbtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.welcomelbl, 3, 1);
@@ -71,9 +72,9 @@
             // homebtn
             // 
             this.homebtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homebtn.Location = new System.Drawing.Point(44, 27);
+            this.homebtn.Location = new System.Drawing.Point(43, 27);
             this.homebtn.Name = "homebtn";
-            this.homebtn.Size = new System.Drawing.Size(114, 40);
+            this.homebtn.Size = new System.Drawing.Size(113, 40);
             this.homebtn.TabIndex = 2;
             this.homebtn.Text = "Supplier Mode";
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
@@ -81,23 +82,23 @@
             // receiverbtn
             // 
             this.receiverbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.receiverbtn.Location = new System.Drawing.Point(164, 27);
+            this.receiverbtn.Location = new System.Drawing.Point(162, 27);
             this.receiverbtn.Name = "receiverbtn";
-            this.receiverbtn.Size = new System.Drawing.Size(120, 40);
+            this.receiverbtn.Size = new System.Drawing.Size(119, 40);
             this.receiverbtn.TabIndex = 3;
             this.receiverbtn.Text = "Receiver Mode";
             this.receiverbtn.Click += new System.EventHandler(this.receiverbtn_Click);
             // 
             // welcomelbl
             // 
-            appearance1.TextHAlignAsString = "Center";
-            appearance1.TextVAlignAsString = "Middle";
-            this.welcomelbl.Appearance = appearance1;
+            appearance3.TextHAlignAsString = "Center";
+            appearance3.TextVAlignAsString = "Middle";
+            this.welcomelbl.Appearance = appearance3;
             this.welcomelbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.welcomelbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.welcomelbl.Location = new System.Drawing.Point(290, 27);
+            this.welcomelbl.Location = new System.Drawing.Point(287, 27);
             this.welcomelbl.Name = "welcomelbl";
-            this.welcomelbl.Size = new System.Drawing.Size(810, 40);
+            this.welcomelbl.Size = new System.Drawing.Size(806, 40);
             this.welcomelbl.TabIndex = 4;
             this.welcomelbl.Text = "Welcome To Your Dream Chores";
             // 
@@ -137,6 +138,7 @@
             this.profilebtn.Size = new System.Drawing.Size(151, 76);
             this.profilebtn.TabIndex = 0;
             this.profilebtn.Text = "Profile Management";
+            this.profilebtn.Click += new System.EventHandler(this.profilebtn_Click);
             // 
             // viewChoresbtn
             // 
@@ -146,6 +148,7 @@
             this.viewChoresbtn.Size = new System.Drawing.Size(151, 76);
             this.viewChoresbtn.TabIndex = 1;
             this.viewChoresbtn.Text = "View Chores";
+            this.viewChoresbtn.Click += new System.EventHandler(this.viewChoresbtn_Click);
             // 
             // bookingbtn
             // 
@@ -155,6 +158,7 @@
             this.bookingbtn.Size = new System.Drawing.Size(151, 76);
             this.bookingbtn.TabIndex = 2;
             this.bookingbtn.Text = "Booking";
+            this.bookingbtn.Click += new System.EventHandler(this.bookingbtn_Click);
             // 
             // communicatebtn
             // 
@@ -164,6 +168,7 @@
             this.communicatebtn.Size = new System.Drawing.Size(151, 76);
             this.communicatebtn.TabIndex = 3;
             this.communicatebtn.Text = "Communication";
+            this.communicatebtn.Click += new System.EventHandler(this.communicatebtn_Click);
             // 
             // reviewbtn
             // 
@@ -173,6 +178,7 @@
             this.reviewbtn.Size = new System.Drawing.Size(151, 76);
             this.reviewbtn.TabIndex = 4;
             this.reviewbtn.Text = "Reviews";
+            this.reviewbtn.Click += new System.EventHandler(this.reviewbtn_Click);
             // 
             // logOutbtn
             // 
@@ -184,12 +190,23 @@
             this.logOutbtn.Text = "Log Out";
             this.logOutbtn.Click += new System.EventHandler(this.logOutbtn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(357, 192);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(778, 442);
+            this.panel1.TabIndex = 4;
+            // 
             // ReceiverMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(1318, 726);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ReceiverMode";
@@ -214,5 +231,6 @@
         private Infragistics.Win.Misc.UltraButton communicatebtn;
         private Infragistics.Win.Misc.UltraButton reviewbtn;
         private Infragistics.Win.Misc.UltraButton logOutbtn;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ChoresDesktopApp.Controls
 {
-    public partial class profile_cs : UserControl
+    public partial class UserControl1 : UserControl
     {
-        public profile_cs()
+        public UserControl1()
         {
             InitializeComponent();
-        }
-
-        private void profile_cs_Load(object sender, EventArgs e)
-        {
-           
         }
     }
 }

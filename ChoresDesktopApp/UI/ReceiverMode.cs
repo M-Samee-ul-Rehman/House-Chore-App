@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChoresDesktopApp.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,6 +40,40 @@ namespace ChoresDesktopApp.UI
             MainForm form = new MainForm();
             this.Hide();
             form.ShowDialog();
+        }
+
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
+        private void profilebtn_Click(object sender, EventArgs e)
+        {
+            profile_cs controls = new profile_cs();
+            addUserControl(controls);
+        }
+
+        private void viewChoresbtn_Click(object sender, EventArgs e)
+        {
+           // profile_cs1.Visible = false;
+        }
+
+        private void bookingbtn_Click(object sender, EventArgs e)
+        {
+           // profile_cs1.Visible = false;
+        }
+
+        private void communicatebtn_Click(object sender, EventArgs e)
+        {
+          //  profile_cs1.Visible = false;
+        }
+
+        private void reviewbtn_Click(object sender, EventArgs e)
+        {
+          //  profile_cs1.Visible = false;
         }
     }
 }
