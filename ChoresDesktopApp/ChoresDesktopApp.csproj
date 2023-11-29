@@ -62,6 +62,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration.cs" />
+    <Compile Include="Controls\Booking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Communication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Communication.Designer.cs">
+      <DependentUpon>Communication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\profile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -74,11 +86,11 @@
     <Compile Include="Controls\services.Designer.cs">
       <DependentUpon>services.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\UserControl1.cs">
+    <Compile Include="Success.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="Success.Designer.cs">
+      <DependentUpon>Success.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
@@ -112,14 +124,20 @@
     <Compile Include="UI\SupplierMode.Designer.cs">
       <DependentUpon>SupplierMode.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Communication.resx">
+      <DependentUpon>Communication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\services.resx">
       <DependentUpon>services.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="Success.resx">
+      <DependentUpon>Success.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

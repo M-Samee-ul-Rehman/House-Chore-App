@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChoresDesktopApp.Controls
 {
-    public partial class UserControl1 : UserControl
+    public partial class Communication : UserControl
     {
-        public UserControl1()
+        public Communication()
         {
             InitializeComponent();
         }

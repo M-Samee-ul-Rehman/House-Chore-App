@@ -14,6 +14,7 @@ namespace ChoresDesktopApp.UI
 {
     public partial class SupplierMode : Form
     {
+        private Button lastPressedButton;
         public SupplierMode()
         {
             InitializeComponent();
@@ -56,6 +57,8 @@ namespace ChoresDesktopApp.UI
         {
            profile_cs controls = new profile_cs();
             addUserControl(controls);
+            BackColor = Color.Blue;
+            
         }
 
         private void choresbtn_Click(object sender, EventArgs e)
@@ -66,17 +69,20 @@ namespace ChoresDesktopApp.UI
 
         private void bookingbtn_Click(object sender, EventArgs e)
         {
-           // profile_cs1.Visible = false;
+            Booking controls = new Booking();
+            addUserControl(controls);
         }
 
         private void communicatebtn_Click(object sender, EventArgs e)
         {
-          //  profile_cs1.Visible = false;
+            Communication controls = new Communication();
+            addUserControl(controls);
         }
 
         private void successbtn_Click(object sender, EventArgs e)
         {
-          //  profile_cs1.Visible = false;
+            Success controls = new Success();
+            addUserControl(controls);
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -92,6 +98,13 @@ namespace ChoresDesktopApp.UI
         private void profile_cs1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+        private void profilebtn_MouseDown(object sender, MouseEventArgs e)
+        {
+          //  ChangeButtonColor((Button)sender);
         }
     }
 }

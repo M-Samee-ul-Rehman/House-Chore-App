@@ -103,4 +103,6 @@ E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\bin\Debug\Infragist
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\bin\Debug\Infragistics4.Win.UltraWinDataSource.v23.1.xml
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.profile_cs.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.services.resources
-E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.UserControl1.resources
+E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.Booking.resources
+E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.Communication.resources
+E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Success.resources

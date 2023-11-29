@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.supplierbtn = new Infragistics.Win.Misc.UltraButton();
             this.aboutbtn = new Infragistics.Win.Misc.UltraButton();
@@ -54,7 +54,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.01158F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.710464F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.238395F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel1.Controls.Add(this.supplierbtn, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.aboutbtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.welcomelbl, 3, 1);
@@ -84,21 +84,21 @@
             this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aboutbtn.Location = new System.Drawing.Point(157, 27);
             this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Size = new System.Drawing.Size(115, 40);
+            this.aboutbtn.Size = new System.Drawing.Size(114, 40);
             this.aboutbtn.TabIndex = 3;
             this.aboutbtn.Text = "Receiver Mode";
             this.aboutbtn.Click += new System.EventHandler(this.aboutbtn_Click);
             // 
             // welcomelbl
             // 
-            appearance2.TextHAlignAsString = "Center";
-            appearance2.TextVAlignAsString = "Middle";
-            this.welcomelbl.Appearance = appearance2;
+            appearance1.TextHAlignAsString = "Center";
+            appearance1.TextVAlignAsString = "Middle";
+            this.welcomelbl.Appearance = appearance1;
             this.welcomelbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.welcomelbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.welcomelbl.Location = new System.Drawing.Point(278, 27);
+            this.welcomelbl.Location = new System.Drawing.Point(277, 27);
             this.welcomelbl.Name = "welcomelbl";
-            this.welcomelbl.Size = new System.Drawing.Size(778, 40);
+            this.welcomelbl.Size = new System.Drawing.Size(777, 40);
             this.welcomelbl.TabIndex = 4;
             this.welcomelbl.Text = "Welcome To Your Dream Chores";
             // 
@@ -140,6 +140,7 @@
             this.profilebtn.TabIndex = 0;
             this.profilebtn.Text = "Profile Management";
             this.profilebtn.Click += new System.EventHandler(this.profilebtn_Click);
+            this.profilebtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.profilebtn_MouseDown);
             // 
             // choresbtn
             // 
