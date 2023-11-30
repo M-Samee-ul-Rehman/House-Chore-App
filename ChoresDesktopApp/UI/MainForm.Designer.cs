@@ -34,7 +34,6 @@
             this.registerbtn = new Infragistics.Win.Misc.UltraButton();
             this.LogInbtn = new Infragistics.Win.Misc.UltraButton();
             this.homebtn = new Infragistics.Win.Misc.UltraButton();
-            this.aboutbtn = new Infragistics.Win.Misc.UltraButton();
             this.welcomelbl = new Infragistics.Win.Misc.UltraLabel();
             this.ultraPanel1 = new Infragistics.Win.Misc.UltraPanel();
             this.ultraPictureBox1 = new Infragistics.Win.UltraWinEditors.UltraPictureBox();
@@ -56,11 +55,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.33596F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.710464F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.238395F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel1.Controls.Add(this.registerbtn, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.LogInbtn, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.homebtn, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.aboutbtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.welcomelbl, 3, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -75,7 +73,7 @@
             // registerbtn
             // 
             this.registerbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.registerbtn.Location = new System.Drawing.Point(1178, 27);
+            this.registerbtn.Location = new System.Drawing.Point(1174, 27);
             this.registerbtn.Name = "registerbtn";
             this.registerbtn.Size = new System.Drawing.Size(85, 40);
             this.registerbtn.TabIndex = 1;
@@ -85,7 +83,7 @@
             // LogInbtn
             // 
             this.LogInbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogInbtn.Location = new System.Drawing.Point(1081, 27);
+            this.LogInbtn.Location = new System.Drawing.Point(1077, 27);
             this.LogInbtn.Name = "LogInbtn";
             this.LogInbtn.Size = new System.Drawing.Size(91, 40);
             this.LogInbtn.TabIndex = 0;
@@ -102,15 +100,6 @@
             this.homebtn.Text = "Home";
             this.homebtn.Click += new System.EventHandler(this.homebtn_Click);
             // 
-            // aboutbtn
-            // 
-            this.aboutbtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutbtn.Location = new System.Drawing.Point(160, 27);
-            this.aboutbtn.Name = "aboutbtn";
-            this.aboutbtn.Size = new System.Drawing.Size(110, 40);
-            this.aboutbtn.TabIndex = 3;
-            this.aboutbtn.Text = "About";
-            // 
             // welcomelbl
             // 
             appearance1.TextHAlignAsString = "Center";
@@ -120,7 +109,7 @@
             this.welcomelbl.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.welcomelbl.Location = new System.Drawing.Point(276, 27);
             this.welcomelbl.Name = "welcomelbl";
-            this.welcomelbl.Size = new System.Drawing.Size(799, 40);
+            this.welcomelbl.Size = new System.Drawing.Size(795, 40);
             this.welcomelbl.TabIndex = 4;
             this.welcomelbl.Text = "Welcome To Your Dream Chores";
             // 
@@ -202,7 +191,6 @@
         private Infragistics.Win.Misc.UltraPanel ultraPanel1;
         private Infragistics.Win.UltraWinEditors.UltraPictureBox ultraPictureBox1;
         private Infragistics.Win.Misc.UltraButton homebtn;
-        private Infragistics.Win.Misc.UltraButton aboutbtn;
         private Infragistics.Win.Misc.UltraLabel welcomelbl;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Infragistics.Win.Misc.UltraLabel ultraLabel1;

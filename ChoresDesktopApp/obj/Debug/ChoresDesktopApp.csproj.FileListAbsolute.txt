@@ -106,3 +106,4 @@ E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDes
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.Booking.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.Communication.resources
 E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Success.resources
+E:\Semester5\SE Lab\Github5\House-Chore-App\ChoresDesktopApp\obj\Debug\ChoresDesktopApp.Controls.ViewChores.resources

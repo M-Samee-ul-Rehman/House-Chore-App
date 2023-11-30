@@ -28,13 +28,16 @@ namespace ChoresDesktopApp.Controls
 
         private void showbtn_Click(object sender, EventArgs e)
         {
+            
             UserLogin user = UserLogin.GetLatestUserLogin();
             string email = user.email;
 
+            //SQL Connection
             using (SqlConnection connection = new SqlConnection(@"Data Source=YASIRSELITEBOOK;Initial Catalog=ChoresDesktop;Integrated Security=True"))
             {
                 connection.Open();
 
+                //Query to get data
                 string query = "SELECT * FROM Registration WHERE Email = @Email";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
@@ -82,12 +85,14 @@ namespace ChoresDesktopApp.Controls
 
         private void editbtn_Click(object sender, EventArgs e)
         {
+            //Exception Handling
             try
             {
                 using (SqlConnection connection = new SqlConnection(@"Data Source=YASIRSELITEBOOK;Initial Catalog=ChoresDesktop;Integrated Security=True"))
                 {
                     connection.Open();
 
+                    //Query to update data
                     string query = "UPDATE Registration SET FirstName = @FirstName, LastName = @LastName, PhoneNumber = @PhoneNumber, HomeAddress = @HomeAddress, UpdatedAT = GETDATE() WHERE Email = @Email";
 
                     using (SqlCommand command = new SqlCommand(query, connection))

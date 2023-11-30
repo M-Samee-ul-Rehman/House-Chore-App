@@ -60,7 +60,8 @@ namespace ChoresDesktopApp.UI
 
         private void viewChoresbtn_Click(object sender, EventArgs e)
         {
-           // profile_cs1.Visible = false;
+            ViewChores controls = new ViewChores();
+            addUserControl(controls);
         }
 
         private void bookingbtn_Click(object sender, EventArgs e)

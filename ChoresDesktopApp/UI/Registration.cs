@@ -71,7 +71,7 @@ namespace ChoresDesktopApp
                     throw new Exception("Invalid CNIC!");
                 }
 
-                if (contact.Length != 13 || !(long.TryParse(contact, out _)))
+                if (contact.Length != 11 || !(long.TryParse(contact, out _)))
                 {
                     throw new Exception("Invalid Phone Number!");
                 }

@@ -22,6 +22,7 @@ namespace ChoresDesktopApp.Controls
 
         private void addbtn_Click(object sender, EventArgs e)
         {
+            //Exception Handling
             try
             {
                 // Retrieve data from the form
@@ -57,6 +58,7 @@ namespace ChoresDesktopApp.Controls
                 {
                     connection.Open();
 
+                    //Query to insert data in services
                     string insertQuery = "INSERT INTO dbo.Services (TaskCategory, TaskDescription, Rate, CreatedAT, UpdatedAT, Active) " +
                                          "VALUES (@TaskCategory, @TaskDescription, @Rate, GETDATE(), GETDATE(), 1)";
 
@@ -92,6 +94,7 @@ namespace ChoresDesktopApp.Controls
 
             using (SqlConnection connection2 = new SqlConnection(@"Data Source=YASIRSELITEBOOK;Initial Catalog=ChoresDesktop;Integrated Security=True"))
             {
+                //Exception Handling
                 try
                 {
                     connection2.Open();
@@ -124,10 +127,12 @@ namespace ChoresDesktopApp.Controls
             dataGridView1.ReadOnly = true;
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
+                //Exception Handling
                 try
                 {
                     connection.Open();
 
+                    //Query to get data from table
                     string selectQuery = "SELECT TaskCategory, TaskDescription, Rate FROM dbo.Services";
 
                     using (SqlCommand command = new SqlCommand(selectQuery, connection))
@@ -138,9 +143,7 @@ namespace ChoresDesktopApp.Controls
                             adapter.Fill(dataTable);
 
                             // Bind the DataTable to the DataGridView
-                            dataGridView1.DataSource = dataTable;
-
-                            
+                            dataGridView1.DataSource = dataTable;                   
                         }
                     }
                 }

@@ -46,5 +46,10 @@ namespace ChoresDesktopApp.Controls
         {
 
         }
+
+        private void acceptbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

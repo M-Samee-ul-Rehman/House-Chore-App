@@ -186,6 +186,7 @@
             this.acceptbtn.Size = new System.Drawing.Size(332, 81);
             this.acceptbtn.TabIndex = 9;
             this.acceptbtn.Text = "Accept";
+            this.acceptbtn.Click += new System.EventHandler(this.acceptbtn_Click);
             // 
             // Booking
             // 
